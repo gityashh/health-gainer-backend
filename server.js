@@ -24,13 +24,7 @@ app.use(fileUpload()); // ✅ Move this below app initialization
 app.use(logger('tiny'));
 
 // CORS
-const corsOptions = {
-    origin: '*', // ✅ No trailing slash "/"
-    credentials: true,
-    optionSuccessStatus: 200,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-};
-app.use(cors(corsOptions));
+app.use(cors());
 
 
 // Body parser
