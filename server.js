@@ -25,7 +25,7 @@ app.use(logger('tiny'));
 
 // CORS
 const corsOptions = {
-    origin: 'http://127.0.0.1:3000', // ✅ No trailing slash "/"
+    origin: '*', // ✅ No trailing slash "/"
     credentials: true,
     optionSuccessStatus: 200,
     methods: ["GET", "POST", "PUT", "DELETE"],
